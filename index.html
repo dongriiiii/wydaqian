@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+<style>
+	.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.back-to-top-button {
+  background-color: rgb(188, 188, 188);
+  border-radius: 15px;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top-button:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.arrow-up {
+  margin-right: 5px;
+}
+
+</style>
   <meta charset="UTF-8">
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
@@ -16,9 +44,14 @@
   <link rel="shortcut icon" href="https://gitee.com/bluemarkstudio/shanhai/raw/master/logo/logo_mc.png" type="image/x-icon">
 
 </head>
+	<body>
   <div id="app" ></div>
-  <a class="to-top"><button style="background-color:rgb(188, 188, 188);border-radius:15px" >回到顶部&uarr;</button></a>
-  
+ <a class="to-top" href="#top">
+  <button class="back-to-top-button">
+    <span class="arrow-up">↑</span> 回到顶部
+  </button>
+</a>
+
 
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
